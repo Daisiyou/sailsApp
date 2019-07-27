@@ -19,7 +19,11 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': { view: 'pages/homepage' },
+  'get /': "index",
+  "post /document" : "DocumentController.create",
+  "delete /document/:id" : "DocumentController.delete",
+
+  // 'get /testapi' : 'TestAPIController.gettest',
 
 
   /***************************************************************************
