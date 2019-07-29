@@ -4,24 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <meta name="viewport" content="user-scalable=0"> -->
+  <link rel="stylesheet" href="../../assets/styles/style.css">
   <title>Document</title>
 </head>
 <body>
-  <div>
-      <form action="document" method="post">
-          title: <input type="text" name="title" />
-          content: <input type="text" name="content" />
-          <input type="submit" value="Submit"/>
-      </form>
-  </div>
-
+  <header id="main-header">
     <div>
-        <% for(index in list){ %>
-        <h1> <%= list[index].title %> </h1>
-        <h2> <%= list[index].content %> </h2>
-        <button  onclick="deleleDocument(<%= list[index].id %>)">  delete  </button>
-        <%}%>
+      <h1>
+        This is my test article
+      </h1>
     </div>
+  </header>
+  <section id="main-editer">
+      <div>
+          <form action="document" method="post">
+              title: <input type="text" name="title" />
+              content:<textarea name="content" cols="30" rows="10"></textarea>
+              <input class="button" type="submit" value="Submit"/>
+          </form>
+      </div>
+  </section>
+  <section id=main-content>
+      <div>
+          <% for(index in list){ %>
+          <article>
+            <h1 class="title"> <%= list[index].title %> </h1>
+            <p> <%= list[index].content %> </p>
+            <button  onclick="deleleDocument(<%= list[index].id %>)">  delete  </button>
+            <%}%>
+        </article>
+      </div>
+  </section>
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>

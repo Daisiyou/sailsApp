@@ -1,0 +1,93 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0; 
+}
+
+input[type="submit"]{
+    color: white;
+    height: 40px;
+    width: 80px;
+    background-color: blue;
+}
+
+input[type="submit"]:hover{
+    color: red;
+    background-color: white;
+}
+
+button{
+    color: white;
+    height: 40px;
+    width: 80px;
+    background-color: blue;
+    margin-top: 20px;
+}
+
+button:hover{
+    color: red;
+    background-color: white;
+}
+
+#main-header{
+    background-color: blueviolet;
+    color: white;
+}
+
+#main-header h1{
+    text-align: center;
+    /* width: 80%; */
+    margin: auto;
+}
+
+#main-editer{
+    padding: 20px 0;
+    background-color: black;
+    color: white;
+}
+
+#main-editer div{
+    width: 80%;
+    margin: auto;
+}
+
+#main-editer input[type="text"]{
+    /* border: 2px; */
+    border-color: black;
+    border-width: 1px;
+    border-style: dotted;
+    display: block;
+    margin: 20px 0;
+    box-sizing: border-box;
+    height: 25px;
+    width: 100%;
+}
+
+#main-editer textarea{
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#main-content{
+    padding: 40px 0;
+    background-color: chocolate;
+    color: white;
+}
+
+#main-content div{
+    width: 80%;
+    margin: auto;
+}
+
+#main-content h1{
+    margin-bottom: 20px;
+}
+
+div article{
+    margin: 20px 0;
+}
+
+
+
+
